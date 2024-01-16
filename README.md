@@ -1,6 +1,48 @@
+```markdown
 # E2HQV
-Official Implementation for AAAI2024 paper: "E2HQV: High-Quality Video Generation from Event Camera via Theory-Inspired Model-Aided Deep Learning"
+Official Implementation for "E2HQV: High-Quality Video Generation from Event Camera via Theory-Inspired Model-Aided Deep Learning" - AAAI 2024
 
+## Generate Video Frames with Trained E2HQV
+We provide minimal code to predict video frames using event-streams represented as voxel grids (5 temporal bins), a representation proposed by Alex et al. ([CVPR 2019 paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Zhu_Unsupervised_Event-Based_Learning_of_Optical_Flow_Depth_and_Egomotion_CVPR_2019_paper.pdf)). An example sequence of voxel grids is available in `./dataset/desk_fast_voxelgrid_5bins_examples`. To generate corresponding frames, simply run `python3 app.py` in the terminal. To use E2HQV with your event data, place your events in the form of a 5xHxW numpy array in `.npy` format and then run `python3 app.py`.
 
+## E2HQV Generated Video Frames for Benchmarking
+To benchmark with our method without processing your own data, you can find all E2HQV-generated frames for evaluation on [Google Drive](https://drive.google.com/drive/folders/1h_Xq-VcwIIa4xWXhhFAHjZ_z6jSkIUwc?usp=sharing). Below are the model's statistics on each dataset and scene:
 
+### [Overall]
+| Method       | IJRR MSE↓ | IJRR SSIM↑ | IJRR LPIPS↓ | MVSEC MSE↓ | MVSEC SSIM↑ | MVSEC LPIPS↓ | HQF MSE↓ | HQF SSIM↑ | HQF LPIPS↓ |
+|--------------|-----------|------------|-------------|------------|-------------|--------------|----------|-----------|------------|
+| E2VID        | 0.212     | 0.424      | 0.350       | 0.337      | 0.206       | 0.705        | 0.127    | 0.540     | 0.382      |
+| FireNet      | 0.131     | 0.502      | 0.320       | 0.292      | 0.261       | 0.700        | 0.094    | 0.533     | 0.441      |
+| E2VID+       | 0.070     | 0.560      | 0.236       | 0.132      | 0.345       | 0.514        | 0.036    | 0.643     | 0.252      |
+| FireNet+     | 0.063     | 0.555      | 0.290       | 0.218      | 0.297       | 0.570        | 0.040    | 0.614     | 0.314      |
+| SPADE-E2VID  | 0.091     | 0.517      | 0.337       | 0.138      | 0.342       | 0.589        | 0.077    | 0.521     | 0.502      |
+| SSL-E2VID    | 0.046     | 0.364      | 0.425       | 0.062      | 0.345       | 0.593        | 0.126    | 0.295     | 0.498      |
+| ET-Net       | 0.047     | 0.617      | 0.224       | 0.107      | 0.380       | 0.489        | 0.032    | 0.658     | 0.260      |
+| E2HQV (Ours) | 0.028     | 0.682      | 0.196       | 0.032      | 0.421       | 0.460        | 0.019    | 0.671     | 0.261      |
+
+### [IJRR]
+|        | boxes_6dof | calibration | dynamic_6dof | office_zigzag | poster_6dof | shapes_6dof | slider_depth |
+|--------|------------|-------------|--------------|---------------|-------------|-------------|--------------|
+| mse    | 0.0354     | 0.0206      | 0.0278       | 0.0214        | 0.034
+
+5      | 0.0407      | 0.0129       |
+| ssim   | 0.5638     | 0.6471      | 0.7185       | 0.6802        | 0.5552      | 0.8194      | 0.7879       |
+| lpips  | 0.2574     | 0.1639      | 0.1965       | 0.2239        | 0.1978      | 0.1712      | 0.1623       |
+
+### [MVSEC]
+|        | indoor_flying1 | indoor_flying2 | indoor_flying3 | outdoor_day1 | outdoor_day2 |
+|--------|----------------|----------------|----------------|--------------|--------------|
+| mse    | 0.0235         | 0.0194         | 0.0224         | 0.0518       | 0.0403       |
+| ssim   | 0.4495         | 0.4249         | 0.4484         | 0.3343       | 0.4462       |
+| lpips  | 0.4381         | 0.4444         | 0.4262         | 0.5802       | 0.4086       |
+
+### [HQF]
+|        | bike_bay_hdr | boxes | desk | desk_fast | desk_hand_only | desk_slow | engineering_posters | high_texture_plants | poster_pillar_1 | poster_pillar_2 | reflective_materials | slow_and_fast_desk | slow_hand | still_life |
+|--------|--------------|-------|------|-----------|----------------|-----------|---------------------|---------------------|-----------------|-----------------|----------------------|--------------------|-----------|------------|
+| mse    | 0.0306       | 0.0139| 0.0146| 0.0087   | 0.0135         | 0.0223    | 0.0207              | 0.0280              | 0.0108          | 0.0084          | 0.0147               | 0.0246             | 0.0304    | 0.0225     |
+| ssim   | 0.5689       | 0.7571| 0.7358| 0.7781   | 0.7485         | 0.6867    | 0.6537              | 0.5559              | 0.6195          | 0.6543          | 0.6924               | 0.6737             | 0.5779    | 0.6878     |
+| lpips  | 0.3532       | 0.1850| 0.1808| 0.1771   | 0.2842         | 0.2711    | 0.2444              | 0.2166              | 0.2746          | 0.2651          | 0.2403               | 0.2531             | 0.3629    | 0.2087     |
+
+## Dataset Preparation
 ### To Be Updated
+```
