@@ -1,5 +1,5 @@
 # E2HQV
-Official Implementation for "E2HQV: High-Quality Video Generation from Event Camera via Theory-Inspired Model-Aided Deep Learning" - AAAI 2024
+Official Implementation for "E2HQV: High-Quality Video Generation from Event Camera via Theory-Inspired Model-Aided Deep Learning" - **AAAI 2024**
 
 ## Generate Video Frames with Trained E2HQV
 We provide minimal code to predict video frames using event-streams represented as voxel grids (5 temporal bins), a representation proposed by Alex et al. ([CVPR 2019 paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Zhu_Unsupervised_Event-Based_Learning_of_Optical_Flow_Depth_and_Egomotion_CVPR_2019_paper.pdf)). An example sequence of voxel grids is available in `./dataset/desk_fast_voxelgrid_5bins_examples`. To generate corresponding frames, simply run `python3 app.py` in the terminal. To use E2HQV with your event data, place your events in the form of a 5xHxW numpy array in `.npy` format and then run `python3 app.py`.
