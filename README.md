@@ -22,9 +22,7 @@ To benchmark with our method without processing your own data, you can find all 
 ### [IJRR]
 |        | boxes_6dof | calibration | dynamic_6dof | office_zigzag | poster_6dof | shapes_6dof | slider_depth |
 |--------|------------|-------------|--------------|---------------|-------------|-------------|--------------|
-| mse    | 0.0354     | 0.0206      | 0.0278       | 0.0214        | 0.034
-
-5      | 0.0407      | 0.0129       |
+| mse    | 0.0354     | 0.0206      | 0.0278       | 0.0214        | 0.0345      | 0.0407      | 0.0129       |
 | ssim   | 0.5638     | 0.6471      | 0.7185       | 0.6802        | 0.5552      | 0.8194      | 0.7879       |
 | lpips  | 0.2574     | 0.1639      | 0.1965       | 0.2239        | 0.1978      | 0.1712      | 0.1623       |
 
