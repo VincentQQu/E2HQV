@@ -4,7 +4,7 @@ Official Implementation for "E2HQV: High-Quality Video Generation from Event Cam
 
 ## Generate Video Frames with Trained E2HQV
 
-**Note:** Due to the size limitation on GitHub, the complete code along with the model weights is available on [Google Drive](https://drive.google.com/drive/folders/1h_Xq-VcwIIa4xWXhhFAHjZ_z6jSkIUwc?usp=drive_link).
+**Note:** Due to the size limitation on GitHub, the complete code along with the model weights is stored on [Google Drive](https://drive.google.com/drive/folders/1h_Xq-VcwIIa4xWXhhFAHjZ_z6jSkIUwc?usp=drive_link).
 
 * On Google Drive, we provide minimal code to predict video frames using event-streams represented as voxel grids with 5 temporal bins. This representation was proposed by Alex et al. in their [CVPR 2019 paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Zhu_Unsupervised_Event-Based_Learning_of_Optical_Flow_Depth_and_Egomotion_CVPR_2019_paper.pdf).
 
