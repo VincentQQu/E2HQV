@@ -1,8 +1,6 @@
 # E2HQV
 Official Implementation for "E2HQV: High-Quality Video Generation from Event Camera via Theory-Inspired Model-Aided Deep Learning" - AAAI 2024
 
-## Generate Video Frames with Trained E2HQV
-
 
 ## Generate Video Frames with Trained E2HQV
 
