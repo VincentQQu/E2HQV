@@ -14,7 +14,7 @@ Official Implementation for "E2HQV: High-Quality Video Generation from Event Cam
 
 
 ## E2HQV Generated Video Frames for Benchmarking
-To benchmark with our method without processing your own data, you can find all E2HQV-generated frames for evaluation on [Google Drive](https://drive.google.com/file/d/1pZRhDOfx5A7w-KZpPsOc3bq4okR9-58X/view?usp=sharing). Below are the model's statistics on each dataset and scene:
+To benchmark with our method without processing your own data, you can find E2HQV-generated frames for evaluation on [Google Drive](https://drive.google.com/file/d/1pZRhDOfx5A7w-KZpPsOc3bq4okR9-58X/view?usp=sharing). Below are the model's statistics on each dataset and scene:
 
 ### [Overall]
 | Method       | IJRR MSE↓ | IJRR SSIM↑ | IJRR LPIPS↓ | MVSEC MSE↓ | MVSEC SSIM↑ | MVSEC LPIPS↓ | HQF MSE↓ | HQF SSIM↑ | HQF LPIPS↓ |
