@@ -10,7 +10,7 @@ Official Implementation for "E2HQV: High-Quality Video Generation from Event Cam
 
 * An example sequence of voxel grids can be found in `./dataset/desk_fast_voxelgrid_5bins_examples`. To generate the corresponding frames, simply run `python3 app.py` in the terminal.
 
-* If you wish to use E2HQV with your own event data, place your events in the form of a 5xHxW numpy array saved in `.npy` format. Then, execute `python3 app.py` to process your data. In the **Dataset Preparation** section, we will provide detailed instructions and the necessary code to convert raw event data into voxel format.
+* If you wish to use E2HQV with your own event data, place your event temporal bins in the form of a 5xHxW numpy array saved in `.npy` format. Then, execute `python3 app.py` to process your data. In the **Dataset Preparation** section, we will provide detailed instructions and the necessary code to convert raw event data into voxel format.
 
 
 ## E2HQV Generated Video Frames for Benchmarking
