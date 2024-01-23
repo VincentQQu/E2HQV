@@ -1,18 +1,6 @@
 # E2HQV
 Official Implementation for "E2HQV: High-Quality Video Generation from Event Camera via Theory-Inspired Model-Aided Deep Learning" - **AAAI 2024** [arxiv](https://arxiv.org/abs/2401.08117)
 
-
-## Generate Video Frames with Trained E2HQV
-
-**Note:** Due to the size limitation on GitHub, the complete code along with the model weights is stored on [Google Drive](https://drive.google.com/drive/folders/1h_Xq-VcwIIa4xWXhhFAHjZ_z6jSkIUwc?usp=drive_link).
-
-* On Google Drive, we provide minimal code to predict video frames using event-streams represented as voxel grids with 5 temporal bins. This representation was proposed by Alex et al. in their [CVPR 2019 paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Zhu_Unsupervised_Event-Based_Learning_of_Optical_Flow_Depth_and_Egomotion_CVPR_2019_paper.pdf).
-
-* An example sequence of voxel grids can be found in `./dataset/desk_fast_voxelgrid_5bins_examples`. To generate the corresponding frames, simply run `python3 app.py` in the terminal.
-
-* If you wish to use E2HQV with your own event data, place your event temporal bins in the form of a 5xHxW numpy array saved in `.npy` format. Then, execute `python3 app.py` to process your data. In the **Dataset Preparation** section, we will provide detailed instructions and the necessary code to convert raw event data into voxel format.
-
-
 ## E2HQV Generated Video Frames for Benchmarking
 To benchmark with our method without processing your own data, you can find E2HQV-generated frames for evaluation on [Google Drive](https://drive.google.com/file/d/1pZRhDOfx5A7w-KZpPsOc3bq4okR9-58X/view?usp=sharing). Below are the model's statistics on each dataset and scene:
 
@@ -48,6 +36,19 @@ To benchmark with our method without processing your own data, you can find E2HQ
 | MSE↓   | 0.0306       | 0.0139| 0.0146| 0.0087   | 0.0135         | 0.0223    | 0.0207              | 0.0280              | 0.0108          | 0.0084          | 0.0147               | 0.0246             | 0.0304    | 0.0225     |
 | SSIM↑  | 0.5689       | 0.7571| 0.7358| 0.7781   | 0.7485         | 0.6867    | 0.6537              | 0.5559              | 0.6195          | 0.6543          | 0.6924               | 0.6737             | 0.5779    | 0.6878     |
 | LPIPS↓ | 0.3532       | 0.1850| 0.1808| 0.1771   | 0.2842         | 0.2711    | 0.2444              | 0.2166              | 0.2746          | 0.2651          | 0.2403               | 0.2531             | 0.3629    | 0.2087     |
+
+## Generate Video Frames with the Trained E2HQV
+
+**Note:** Due to the size limitation on GitHub, the complete code along with the model weights is stored on [Google Drive](https://drive.google.com/drive/folders/1h_Xq-VcwIIa4xWXhhFAHjZ_z6jSkIUwc?usp=drive_link).
+
+* On Google Drive, we provide minimal code to predict video frames using event-streams represented as voxel grids with 5 temporal bins. This representation was proposed by Alex et al. in their [CVPR 2019 paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Zhu_Unsupervised_Event-Based_Learning_of_Optical_Flow_Depth_and_Egomotion_CVPR_2019_paper.pdf).
+
+* An example sequence of voxel grids can be found in `./dataset/desk_fast_voxelgrid_5bins_examples`. To generate the corresponding frames, simply run `python3 app.py` in the terminal.
+
+* If you wish to use E2HQV with your own event data, place your event temporal bins in the form of a 5xHxW numpy array saved in `.npy` format. Then, execute `python3 app.py` to process your data. In the **Dataset Preparation** section, we will provide detailed instructions and the necessary code to convert raw event data into voxel format.
+
+
+
 
 ## Dataset Preparation
 ### To Be Updated
