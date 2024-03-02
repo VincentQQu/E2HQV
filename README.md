@@ -45,7 +45,7 @@ To benchmark with our method without processing your own data, you can find E2HQ
 
 * An example sequence of voxel grids can be found in `./dataset/desk_fast_voxelgrid_5bins_examples`. To generate the corresponding frames, simply run `python3 app.py` in the terminal.
 
-* If you wish to use E2HQV with your own event data, place your event temporal bins in the form of a 5xHxW numpy array saved in `.npy` format. Then, execute `python3 app.py` to process your data. In the **Dataset Preparation** section, we will provide detailed instructions and the necessary code to convert raw event data into voxel format.
+* If you wish to use E2HQV with your own event data, place your event temporal bins in the form of a 5xHxW numpy array saved in `.npy` format (to ./dataset/desk_fast_voxelgrid_5bins_examples). Then, execute `python3 app.py` to process your data. In the **Dataset Preparation** section, we will provide detailed instructions and the necessary code to convert raw event data into voxel format.
 
 
 
