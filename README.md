@@ -39,6 +39,8 @@ To benchmark with our method without processing your own data, you can find E2HQ
 
 ## Generate Video Frames with the Trained E2HQV
 
+
+
 **Fix on 06/27/2024:** app.py line 144 replace the `p_states` to `current_states`: return rf0, f01.detach(), last_gt, current_states, all_output
 
 **Note:** Due to the size limitation on GitHub, the complete code along with the model weights is stored on [Google Drive](https://drive.google.com/drive/folders/1h_Xq-VcwIIa4xWXhhFAHjZ_z6jSkIUwc?usp=drive_link).
@@ -49,7 +51,7 @@ To benchmark with our method without processing your own data, you can find E2HQ
 
 * If you wish to use E2HQV with your own event data, place your event temporal bins in the form of a 5xHxW numpy array saved in `.npy` format (to ./dataset/desk_fast_voxelgrid_5bins_examples). Then, execute `python3 app.py` to process your data. In the **Dataset Preparation** section, we will provide detailed instructions and the necessary code to convert raw event data into voxel format.
 
-
+**Known Issue:** The training process did not incorporate optical flow, unlike other methods such as E2VID. As a result, the temporal consistency is suboptimal.
 
 
 ## Dataset Preparation
