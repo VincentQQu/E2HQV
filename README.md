@@ -39,6 +39,8 @@ To benchmark with our method without processing your own data, you can find E2HQ
 
 ## Generate Video Frames with the Trained E2HQV
 
+**Fix on 06/27/2024:** app.py line 144 replace the `p_states` to `current_states`: return rf0, f01.detach(), last_gt, current_states, all_output
+
 **Note:** Due to the size limitation on GitHub, the complete code along with the model weights is stored on [Google Drive](https://drive.google.com/drive/folders/1h_Xq-VcwIIa4xWXhhFAHjZ_z6jSkIUwc?usp=drive_link).
 
 * On Google Drive, we provide minimal code to predict video frames using event-streams represented as voxel grids with 5 temporal bins. This representation was proposed by Alex et al. in their [CVPR 2019 paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Zhu_Unsupervised_Event-Based_Learning_of_Optical_Flow_Depth_and_Egomotion_CVPR_2019_paper.pdf).
