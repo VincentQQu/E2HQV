@@ -51,7 +51,7 @@ To benchmark with our method without processing your own data, you can find E2HQ
 
 * If you wish to use E2HQV with your own event data, place your event temporal bins in the form of a 5xHxW numpy array saved in `.npy` format (to ./dataset/desk_fast_voxelgrid_5bins_examples). Then, execute `python3 app.py` to process your data. In the **Dataset Preparation** section, we will provide detailed instructions and the necessary code to convert raw event data into voxel format.
 
-**Known Issue:** The training process did not incorporate optical flow, unlike other methods such as E2VID. As a result, the temporal consistency is suboptimal.
+**Known Issue:** The training process did not utilize optical flow, unlike other methods such as E2VID. As a result, the temporal consistency is suboptimal.
 
 
 ## Dataset Preparation
