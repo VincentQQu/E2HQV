@@ -55,4 +55,6 @@ To benchmark with our method without processing your own data, you can find E2HQ
 
 
 ## Dataset Preparation
+
+You can find `e2voxel_grid.py` to convert events to voxel grids in [Google Drive](https://drive.google.com/drive/folders/1h_Xq-VcwIIa4xWXhhFAHjZ_z6jSkIUwc?usp=drive_link).
 ### To Be Updated
