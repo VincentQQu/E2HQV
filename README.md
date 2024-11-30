@@ -54,6 +54,23 @@ To benchmark with our method without processing your own data, you can find E2HQ
 **Known Issue:** The training process did not utilize optical flow, unlike other methods such as E2VID. As a result, the temporal consistency is suboptimal.
 
 
+### To Cite
+<pre>
+@inproceedings{qu2024e2hqv,
+  title={E2HQV: High-Quality Video Generation from Event Camera via Theory-Inspired Model-Aided Deep Learning},
+  author={Qu, Qiang and Shen, Yiran and Chen, Xiaoming and Chung, Yuk Ying and Liu, Tongliang},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={5},
+  pages={4632--4640},
+  year={2024}
+}
+
+
+</pre>
+
+
+
 ## Dataset Preparation
 
 You can find the `e2voxel_grid.py` script for converting events to voxel grids in [Google Drive](https://drive.google.com/drive/folders/1h_Xq-VcwIIa4xWXhhFAHjZ_z6jSkIUwc?usp=drive_link).
