@@ -65,8 +65,6 @@ To benchmark with our method without processing your own data, you can find E2HQ
   pages={4632--4640},
   year={2024}
 }
-
-
 </pre>
 
 
