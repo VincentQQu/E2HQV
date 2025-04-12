@@ -71,5 +71,5 @@ To benchmark with our method without processing your own data, you can find E2HQ
 
 ## Dataset Preparation
 
-You can find the `e2voxel_grid.py` script for converting events to voxel grids in [Google Drive](https://drive.google.com/drive/folders/1h_Xq-VcwIIa4xWXhhFAHjZ_z6jSkIUwc?usp=drive_link).
+You can find the `e2voxel_grid.py` script for converting events to voxel grids in [Google Drive](https://drive.google.com/drive/folders/1h_Xq-VcwIIa4xWXhhFAHjZ_z6jSkIUwc?usp=drive_link). More python implementation for other common event representations (e.g., two-channel, four-channel, TORE, EvRep, and EvRepSL) can be found [here](https://github.com/VincentQQu/EvRepSL).  
 ### To Be Updated
