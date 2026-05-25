@@ -44,7 +44,7 @@ To benchmark with our method without processing your own data, you can find E2HQ
 
 ## Generate Video Frames with the Trained E2HQV
 
-**Looking for the latest model?** Use **[PIE-Net](https://github.com/VincentQQu/pie-net)** instead — same research line, improved architecture, `pip install event-pienet`, and a real-time camera demo. This section documents the original E2HQV workflow.
+**[Important] Looking for the latest model?** Use **[PIE-Net](https://github.com/VincentQQu/pie-net)** instead — same research line, improved architecture, `pip install event-pienet`, and a real-time camera demo. This section documents the original E2HQV workflow.
 
 **Fix on 06/27/2024:** app.py line 144 replace the `p_states` to `current_states`: return rf0, f01.detach(), last_gt, current_states, all_output
 
