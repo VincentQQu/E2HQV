@@ -2,7 +2,7 @@
 Official Implementation for "E2HQV: High-Quality Video Generation from Event Camera via Theory-Inspired Model-Aided Deep Learning" - **AAAI 2024** [arxiv](https://arxiv.org/abs/2401.08117) [aaai](https://ojs.aaai.org/index.php/AAAI/article/download/28263/28517)
 
 
-**[Important] Successor: [PIE-Net](https://github.com/VincentQQu/pie-net)** — the next generation much powerful and faster version of E2HQV with probabilistic intensity-event modeling (PIEM), per-pixel uncertainty, and a pip-installable package (`pip install event-pienet[realtime]`). Pretrained **PIE-Net** and **PIE-Net-Lite** weights are included; real-time demo supported.
+**[Important] Successor: [PIE-Net](https://github.com/VincentQQu/pie-net)** — the next generation better version of E2HQV with probabilistic intensity-event modeling (PIEM), per-pixel uncertainty, and a pip-installable package (`pip install event-pienet[realtime]`). Pretrained **PIE-Net** and **PIE-Net-Lite** weights are included; real-time demo supported.
 
 This repository remains the official **E2HQV (AAAI 2024)** code and benchmark artifacts for reproducibility.
 
