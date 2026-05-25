@@ -1,6 +1,11 @@
 # E2HQV
 Official Implementation for "E2HQV: High-Quality Video Generation from Event Camera via Theory-Inspired Model-Aided Deep Learning" - **AAAI 2024** [arxiv](https://arxiv.org/abs/2401.08117) [aaai](https://ojs.aaai.org/index.php/AAAI/article/download/28263/28517)
 
+
+**Successor: [PIE-Net](https://github.com/VincentQQu/pie-net)** — the next generation of E2HQV with probabilistic intensity-event modeling (PIEM), per-pixel uncertainty, and a pip-installable package (`pip install event-pienet[realtime]`). Pretrained **PIE-Net** and **PIE-Net-Lite** weights are included; real-time demo supported.
+
+This repository remains the official **E2HQV (AAAI 2024)** code and benchmark artifacts for reproducibility.
+
 ## E2HQV Generated Video Frames for Benchmarking
 To benchmark with our method without processing your own data, you can find E2HQV-generated frames for evaluation on [Google Drive](https://drive.google.com/file/d/1pZRhDOfx5A7w-KZpPsOc3bq4okR9-58X/view?usp=sharing). Below are the model's statistics on each dataset and scene (following the initial evaluation protocal of [EVREAL](https://github.com/ercanburak/EVREAL)):
 
@@ -39,7 +44,7 @@ To benchmark with our method without processing your own data, you can find E2HQ
 
 ## Generate Video Frames with the Trained E2HQV
 
-
+**Looking for the latest model?** Use **[PIE-Net](https://github.com/VincentQQu/pie-net)** instead — same research line, improved architecture, `pip install event-pienet`, and a real-time camera demo. This section documents the original E2HQV workflow.
 
 **Fix on 06/27/2024:** app.py line 144 replace the `p_states` to `current_states`: return rf0, f01.detach(), last_gt, current_states, all_output
 
